@@ -1,0 +1,46 @@
+# Site details
+title: <course title>
+description: Course materials for ...
+url: <link-to-course-website>
+gh_repository: <link-to-course-repo>
+gh_org: <link-to-course-GitHub-organisation>
+moodle_page: <link-to-course-moodle-page>
+
+# Theme
+theme: just-the-docs
+color_scheme: serc
+
+# Footer content
+# Back to top link
+back_to_top: true
+back_to_top_text: "Back to top"
+
+mermaid:
+  version: "11.5.0"
+
+kramdown:
+  syntax_highlighter: rouge
+  parse_block_html: false
+
+callouts:
+  highlight:
+    color: yellow
+  note:
+    title: Note
+    color: blue
+  warning:
+    title: Warning
+    color: red
+  solution:
+    title: Solution
+    color: green
+callouts_opacity: 0.1
+
+# Slide defaults
+slides:
+  theme: simple
+  transition: none
+
+plugins:
+  - jekyll-last-modified-at
+  - jekyll-redirect-from

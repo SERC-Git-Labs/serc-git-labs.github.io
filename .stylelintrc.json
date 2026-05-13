@@ -1,0 +1,9 @@
+{
+    "extends": ["stylelint-config-standard-scss"],
+    "ignoreFiles": ["/github/workspace/docs/assets/css/just-the-docs-serc.scss", "docs/assets/css/just-the-docs-serc.scss"],
+    "rules": {
+        "alpha-value-notation": "number",
+        "property-no-vendor-prefix": null,
+        "scss/no-global-function-names": null
+    }
+}

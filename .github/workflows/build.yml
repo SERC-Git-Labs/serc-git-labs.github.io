@@ -1,0 +1,65 @@
+# Build
+name: Build Jekyll Site
+
+on:
+  # Trigger the workflow on pull requests to main
+  pull_request:
+    branches: [main]
+    paths:
+      - "docs/**"
+
+  # Allows workflow to be run manually from the Actions tab
+  workflow_dispatch:
+
+  # enable workflow to be used in other workflows
+  workflow_call:
+
+permissions:
+  contents: read
+  pull-requests: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Install Pandoc from .deb
+        env:
+          PANDOC_VERSION: '3.7'
+        run: |
+          wget -q https://github.com/jgm/pandoc/releases/download/"$PANDOC_VERSION"/pandoc-"$PANDOC_VERSION"-1-amd64.deb
+          sudo dpkg -i pandoc-"$PANDOC_VERSION"-1-amd64.deb
+          pandoc --version
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2' # Not needed with a .ruby-version file
+          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+          cache-version: 0 # Increment this number if you need to re-download cached gems
+          working-directory: '${{ github.workspace }}/docs' # Needed if your Gemfile is not in the root of the project
+      
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v6
+
+      - name: Build with Jekyll
+        run: BUNDLE_GEMFILE='${{ github.workspace }}/docs/Gemfile' bundle exec jekyll build -s ./docs -d ./_site --baseurl "${{ steps.pages.outputs.base_path }}"
+        env:
+          JEKYLL_ENV: production
+      
+      - name: Upload artifact
+        if: github.event_name != 'pull_request'
+        # Automatically uploads an artifact from the './_site' directory by default
+        uses: actions/upload-pages-artifact@v5
+
+      - name: Page paths
+        run: |
+          echo "Base URL: ${{ steps.pages.outputs.base_url }}"
+          echo "Base path: ${{ steps.pages.outputs.base_path }}"
+          echo "Origin: ${{ steps.pages.outputs.origin }}"
+          echo "Host: ${{ steps.pages.outputs.host }}"

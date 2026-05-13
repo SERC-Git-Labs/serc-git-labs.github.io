@@ -1,0 +1,9 @@
+{
+    "name": "Mermaid CLI",
+    "id": "mermaid-cli",
+    "version": "1.0.0",
+    "description": "Installs the Mermaid CLI",
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/node:1"
+    ]
+}

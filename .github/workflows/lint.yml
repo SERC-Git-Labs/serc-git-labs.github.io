@@ -1,0 +1,64 @@
+# Lint
+name: Lint
+
+on:
+  # Trigger the workflow on pull requests to main
+  pull_request:
+    branches: [main]
+
+  # Allows workflow to be run manually from the Actions tab
+  workflow_dispatch:
+
+  # enable workflow to be used in other workflows
+  workflow_call:
+
+permissions:
+  contents: read
+  pull-requests: read
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Spell check
+        uses: streetsidesoftware/cspell-action@v8
+        with:
+          # Path to the cspell.json file
+          config: cspell.json
+          # Path to the file or directory to check
+          root: .
+          # File patterns to check
+          files: '**/*.{md,html,yml,yaml}'
+          # Limit the files checked to the ones in the pull request or push.
+          incremental_files_only: true
+
+      - name: Lint Markdown
+        uses: DavidAnson/markdownlint-cli2-action@v23
+        with:
+          config: '.markdownlint.yml'
+          globs: '**/*.md'
+
+      - name: super lint
+        uses: super-linter/super-linter/slim@v8
+        env:
+          # if PR false, else true
+          VALIDATE_ALL_CODEBASE: ${{ github.event_name != 'pull_request' }}
+          DEFAULT_BRANCH: main
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CSS_FILE_NAME: ../../.stylelintrc.json
+          JAVASCRIPT_ES_CONFIG_FILE: ../../eslint.config.mjs
+          MARKDOWN_CONFIG_FILE: ../../.markdownlint.yml
+          VALIDATE_CSS: true
+          VALIDATE_GITHUB_ACTIONS: true
+          VALIDATE_HTML: true
+          VALIDATE_JAVASCRIPT_ES: true
+          # VALIDATE_JAVASCRIPT_STANDARD: true
+          VALIDATE_JSON: true
+          VALIDATE_MARKDOWN: true
+          # VALIDATE_RUBY: true
+          VALIDATE_YAML: true

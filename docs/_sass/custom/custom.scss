@@ -1,0 +1,23 @@
+// include custom SCSS (or CSS) files here
+@import "./icons";
+@import "./modal-popup";
+@import "./sidecar-page-nav";
+@import "./ai-notice";
+
+// custom SCSS (or CSS) goes here
+
+// override core settings
+.main-content h4 {
+    margin-top: 2rem;
+}
+
+// striping for tables
+.table-striped thead th,
+.table-striped tr:nth-child(even) td {
+    background-color: #f9f9f9;
+}
+
+// code block wrapping
+.pre-wrap div.highlight pre {
+    white-space: pre-wrap;
+}

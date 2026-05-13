@@ -1,0 +1,11 @@
+# actions/labeler configuration file
+# Add 'content' label to all PRs that change markdown files in the docs folder, or the head branch starts with 'content'
+content:
+  - any:
+    - head-branch: '^content'
+    - changed-files:
+      - any-glob-to-any-file: 'docs/**/*.md'
+
+# Add 'feature' label to all PRs where the head branch starts with 'feature'
+feature:
+  - head-branch: ['^feature']

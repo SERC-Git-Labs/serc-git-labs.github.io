@@ -1,0 +1,22 @@
+{
+    "version": "0.2",
+    "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json",
+    "ignoreRegExpList": ["\\b\\w+\\.\\.\\."],
+    "words": [
+        "callouts",
+        "codespace",
+        "codespaces",
+        "devcontainer",
+        "devcontainers",
+        "endraw",
+        "moodle",
+        "pandoc",
+        "powerpoints",
+        "serc",
+        "stylelint"
+    ],
+    "dictionaries": [
+        "en-gb",
+        "lorem-ipsum"
+    ]
+}

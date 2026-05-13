@@ -1,0 +1,56 @@
+// Fixed position page table of contents sidecar
+
+$toc-sidecar-width: 12rem;
+
+// $media-queries: map-merge($media-queries, (
+//   'lg-sc': $nav-width + $content-width + $toc-sidecar-width + 2rem + 2rem,
+// ));
+
+#toc-sidecar {
+    position: fixed;
+    top: 1rem;
+    min-width: $toc-sidecar-width;
+    
+    // padding: 0.5rem 0.5rem 0 0.5rem;
+    // background-color: $sidebar-color;
+
+    // add scrollbars if necessary
+    overflow: auto !important;
+    max-height: calc(100vh - 2rem) !important;
+
+    // transition to visible/hidden
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.75s 0s, opacity 0.75s 0s;    
+
+    @media (max-width: #{$nav-width + $content-width + $toc-sidecar-width}) {
+        display: none;
+    }
+
+    @media (min-width: #{$nav-width + $content-width + $toc-sidecar-width}) {
+        display: block;
+        margin-left: $content-width + $gutter-spacing;
+    }
+
+    &.visible {
+        visibility: visible !important;
+        opacity: 1 !important;
+        transition: visibility 0.75s 0s, opacity 0.75s 0s;
+    }
+
+    p {
+        margin: 0;
+        font-weight: 600;
+        border-bottom: 1px solid $border-color;
+    }
+
+    a.active {
+        font-weight: 700;
+    }
+}
+
+#toc-sidecar,
+#toc-sidecar li,
+#toc-sidecar li::before {
+    font-size: $font-size-2 !important;
+}

@@ -1,0 +1,49 @@
+{% assign ai = page.ai %}
+<aside class="ai-notice fs-3" role="note" aria-label="AI use notice">
+  <p><strong>AI assistance:</strong>
+    
+  This page was created with support from generative AI tools.
+
+  {% if ai.code_generated == true %}
+    This includes AI-assisted generation of some code.
+  {% endif %}
+
+  {% if ai.human_reviewed %}
+    All content has been reviewed and edited by the lecturer.
+  {% endif %}
+
+  <a href="{{ '/ai-use/' | relative_url }}">Read the AI Use Statement</a>.</p>
+
+  {% if ai.role or ai.tools %}
+    <details>
+      <summary aria-label="Show AI use details">AI use details</summary>
+
+      {% if ai.role %}
+        <p><strong>Roles:</strong> AI was used for the following:</p>
+        <ul>
+          {% for r in ai.role %}
+            <li>{{ site.data.ai_roles[r] | default: r | replace: "_", " " }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+
+      {% if ai.tools %}
+        <p><strong>AI Tools</strong> used in the creation of this page:</p>
+        <ul>
+          {% for t in ai.tools %}
+            <li>{{ t }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+
+      {% if ai.code_generated == true %}
+          <p>
+            <em>
+              Note: AI-generated code may contain errors or non-idiomatic patterns; examples were reviewed and adapted for correctness and teaching purposes.
+            </em>
+          </p>
+        {% endif %}
+
+    </details>
+  {% endif %}
+</aside>

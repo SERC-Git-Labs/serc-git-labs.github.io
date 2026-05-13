@@ -1,0 +1,44 @@
+# Workflow to convert markdown files with slide attributes to pptx files
+# using pandoc 
+name: Create PowerPoint Files
+
+on:
+  push:
+    paths:
+      - '.github/scripts/convert_to_pptx.sh'
+      - '.github/workflows/create-powerpoints.yml'
+      - 'additional_files/reference.pptx'
+      - 'docs/**/*.md'
+
+  workflow_dispatch:
+
+env:
+  ARTIFACTS_DIR: powerpoints
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Install Pandoc from .deb
+        env:
+          PANDOC_VERSION: '3.7'
+        run: |
+          wget -q https://github.com/jgm/pandoc/releases/download/"$PANDOC_VERSION"/pandoc-"$PANDOC_VERSION"-1-amd64.deb
+          sudo dpkg -i pandoc-"$PANDOC_VERSION"-1-amd64.deb
+          pandoc --version
+
+      - name: Install mermaid CLI
+        run: |
+          npm install -g @mermaid-js/mermaid-cli
+
+      - name: Convert to pptx
+        run: |
+          /bin/bash .github/scripts/convert_to_pptx.sh
+
+      - name: Upload converted pptx
+        uses: actions/upload-artifact@v7
+        with:
+          name: PowerPoint-files
+          path: ${{ env.ARTIFACTS_DIR }}

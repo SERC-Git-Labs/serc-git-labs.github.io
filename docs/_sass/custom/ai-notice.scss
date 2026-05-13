@@ -1,0 +1,21 @@
+// Custom styles for AI notice
+
+.ai-notice {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-left: 4px solid currentcolor;
+    background: rgb(245 245 245);
+    background: rgb(0 0 0 / 0.04);
+    border-radius: 0.25rem;
+
+    // font-size: 0.95rem;
+}
+
+.ai-notice details summary {
+    cursor: pointer;
+    margin-top: 0.5rem;
+}
+
+.ai-notice ul {
+    margin-top: 0.25rem;
+}

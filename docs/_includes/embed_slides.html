@@ -1,0 +1,15 @@
+<h1>{{ include.title | default "Slides" }}</h1>
+
+<iframe src="{{ site.baseurl }}{{ include.url | default: 'slides' }}" style="width: 100%; height: 500px;" frameborder="0" allow="fullscreen"></iframe>
+
+<details class="fs-3 text-grey-dk-000" markdown="block">
+<summary>Controls</summary>
+
+`←` `→` `↓` `↑` - Navigation<br>
+`ESC` or `o` - Toggle overview<br>
+`f` - Toggle fullscreen (`ESC` to exit)<br>
+`g` and <em>`number`</em> - Go to slide number<br>
+`s` - Toggle speaker notes<br>
+`?` - Show keyboard shortcuts<br>
+
+</details>
