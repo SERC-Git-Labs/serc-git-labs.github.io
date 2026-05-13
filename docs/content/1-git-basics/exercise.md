@@ -144,7 +144,7 @@ git commit -m "Add a description of Git"
 
 ### Mistake B: you typed the wrong commit message
 
-If the most recent commit message needs corrected, use:
+If the most recent commit message needs to be corrected, use:
 
 ```bash
 git commit --amend -m "Add a short description of Git"
