@@ -141,7 +141,7 @@ Throughout this exercise, use **Git Bash** for commands. Git Bash gives you a Un
 
    ```bash
    git log --oneline --decorate --all
-   type notes.txt
+   cat notes.txt
    ```
 
    You should see the updated file contents on `main`. At this point, the work from your feature branch is now part of the main branch.
