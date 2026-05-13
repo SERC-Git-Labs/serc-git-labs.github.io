@@ -7,9 +7,11 @@
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	"features": {
-		"ghcr.io/devcontainers/features/node:1": {
+		"ghcr.io/devcontainers/features/node:2": {
 			"nodeGypDependencies": true,
 			"version": "22",
+			"npmVersion": "lts",
+			"pnpmVersion": "latest",
 			"nvmVersion": "latest"
 		},
 		"ghcr.io/devcontainers-extra/features/pandoc:1": {
