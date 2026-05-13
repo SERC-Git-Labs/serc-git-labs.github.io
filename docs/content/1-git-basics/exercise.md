@@ -2,6 +2,7 @@
 title: Introduction to Git Exercise
 layout: default
 ---
+<!-- cspell:words oneline -->
 
 # Introduction to Git Exercise
 
