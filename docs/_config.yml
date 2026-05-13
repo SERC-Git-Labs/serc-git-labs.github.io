@@ -1,9 +1,9 @@
 # Site details
-title: <course title>
-description: Course materials for ...
-url: <link-to-course-website>
-gh_repository: <link-to-course-repo>
-gh_org: <link-to-course-GitHub-organisation>
+title: SERC Git Labs
+description: Course notes and learning materials for teaching and learning Git and GitHub.
+url: https://serc-git-labs.github.io
+gh_repository: https://github.com/SERC-Git-Labs/serc-git-labs.github.io
+gh_org: https://github.com/SERC-Git-Labs
 moodle_page: <link-to-course-moodle-page>
 
 # Theme
