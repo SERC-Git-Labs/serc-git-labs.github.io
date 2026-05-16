@@ -33,6 +33,7 @@ module GenerateSlides
           slide_config_string = page_slide_config.map { |k, v| "-V #{k}=#{v}" }.join(' ')
           slide_config_string += ' --mathjax'
           slide_config_string += ' --slide-level=1'
+          slide_config_string += ' --css=/assets/css/revealjs-custom.css'
           # Use rendered page content (without Jekyll front matter) so metadata titles
           # like "Slides" are not turned into an automatic reveal.js title slide.
           slide_content = PandocRuby.convert(page.content, :s, { f: :markdown, to: :revealjs }, slide_config_string)
