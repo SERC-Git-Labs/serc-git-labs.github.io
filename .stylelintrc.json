@@ -1,9 +1,13 @@
 {
     "extends": ["stylelint-config-standard-scss"],
-    "ignoreFiles": ["/github/workspace/docs/assets/css/just-the-docs-serc.scss", "docs/assets/css/just-the-docs-serc.scss"],
+    "ignoreFiles": [
+        "/github/workspace/docs/assets/css/just-the-docs-serc.scss", "docs/assets/css/just-the-docs-serc.scss",
+        "/github/workspace/docs/assets/css/revealjs-custom.scss", "docs/assets/css/revealjs-custom.scss"
+    ],
     "rules": {
         "alpha-value-notation": "number",
         "property-no-vendor-prefix": null,
-        "scss/no-global-function-names": null
+        "scss/no-global-function-names": null,
+        "selector-class-pattern": "^[a-zA-Z][a-zA-Z0-9-]*$"
     }
 }
