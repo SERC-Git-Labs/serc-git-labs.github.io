@@ -2,6 +2,11 @@
 // in the slide generation process via the `generate_slides.rb` plugin via the 
 // assets/css/revealjs-custom.scss file. See that file for more details.
 
+// override code block font size
+.reveal pre {
+    font-size: 0.8em;
+}
+
 // override code block colors
 // override bash builtin color
 .reveal .slides section code.sourceCode.bash span.bu {
