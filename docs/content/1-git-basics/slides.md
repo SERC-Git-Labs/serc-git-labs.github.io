@@ -1,51 +1,37 @@
-# Lesson 1 Slides
+---
+title: Slides
+layout: default
+parent: "1: Git Basics"
+nav_order: 2
+ai:
+  used: true
+  role:
+    - outline_generation
+    - image_generation
+  tools:
+    - ChatGPT 5.5
+    - GitHub Copilot
+  human_reviewed: true
+  notice_size: small
+slides:
+  theme: 'black'
+  slideNumber: 'true'
+  transition: 'slide'
+---
 
-## Lesson 1: Git Basics and Intro to Remotes
+<!-- markdownlint-disable MD025 MD034 MD045 -->
 
-## What You’ll Learn
+## Lesson 1 - Git Basics
 
-## Why Version Control Matters
+Introduction to Git, and some basic git commands.
 
-## Git vs. GitHub
+<br />
 
-## What Is a Repository?
+<!-- <img src="../assets/svg/Git-Logo-2Color.svg" alt="Git logo" style="max-width:90%; max-height:120px;"> -->
+<img src="../assets/svg/Git-Logo-White.svg" alt="Git logo" style="max-width:90%; max-height:120px;">
 
-## Local vs. Remote Repositories
+::: notes
+Git Logo by Jason Long is licensed under the Creative Commons Attribution 3.0 Unported License.
+:::
 
-## Two Ways to Start
-
-## Starting with `git init`
-
-## Starting with `git clone`
-
-## The Basic Git Workflow
-
-## Working Directory, Staging Area, Repository
-
-## Checking Status
-
-## Staging Changes
-
-## Committing Changes
-
-## Viewing History
-
-## Comparing Changes
-
-## Intro to Remotes
-
-## Pushing to GitHub
-
-## Pulling from GitHub
-
-## Demo: Local-First Workflow
-
-## Demo: GitHub-First Workflow
-
-## Hands-On Activity
-
-## Common Mistakes
-
-## Key Commands Recap
-
-## Wrap-Up
+---
