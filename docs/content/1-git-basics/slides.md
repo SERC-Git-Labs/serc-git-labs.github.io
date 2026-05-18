@@ -48,3 +48,327 @@ Git Logo by Jason Long is licensed under the Creative Commons Attribution 3.0 Un
 <img src="../assets/svg/1-what-youll-learn-roadmap.svg" alt="Roadmap timeline showing 6 learning steps: Git and GitHub, Repos, git init, git clone, Commit, Push to GitHub" style="width:100%; max-width:860px;">
 
 ---
+
+
+
+
+### Slide 3: Why Version Control Matters
+
+* Track changes over time
+* Recover from mistakes
+* Compare versions
+* Collaborate safely
+* Build a project history
+
+<img src="../assets/svg/version-control-chaos-vs-git.svg" alt="Left side shows chaotic file naming without Git (report_final_v2_REAL.docx, etc.). Right side shows a clean Git commit history with meaningful messages." style="width:100%; max-width:860px;">
+
+---
+
+### Slide 4: Git vs. GitHub
+
+* Git = tool installed on your computer
+* GitHub = website for hosting and sharing Git repos
+* Git works offline
+* GitHub helps teams collaborate
+
+<img src="../assets/svg/git-vs-github-split.svg" alt="Split screen: left panel shows a laptop with a terminal running Git commands, labeled Git — tool installed on your computer. Right panel shows a cloud with a GitHub repo URL, labeled GitHub — website for hosting and sharing repos." style="width:100%; max-width:860px;">
+
+---
+
+### Slide 5: What Is a Repository?
+
+* A project folder tracked by Git
+* Contains files plus hidden Git history
+* Git stores snapshots of changes
+* Repositories can be local or remote
+
+<img src="../assets/svg/slide5-repository-folder.svg" alt="Folder named my-project containing README.md, index.html, and a highlighted hidden .git directory with config, HEAD, objects, and refs inside." style="width:100%; max-width:860px;">
+
+---
+
+### Slide 6: Local vs. Remote Repositories
+
+* Local repo: on your computer
+* Remote repo: hosted elsewhere, usually GitHub
+* You work locally, then sync changes
+* Remote repos help with backup and collaboration
+
+<img src="../assets/svg/slide6-local-remote-repos.svg" alt="Local repository on the left with git push arrow pointing right to GitHub, and git pull arrow pointing left back to local." style="width:100%; max-width:860px;">
+
+---
+
+### Slide 7: Two Ways to Start
+
+1. Start locally with `git init`
+2. Start from GitHub with `git clone`
+
+**Key idea:** Both paths lead to a local Git repository.
+
+<img src="../assets/svg/slide7-two-ways-to-start.svg" alt="Two paths - git init from a local folder and git clone from GitHub - both converge into a single Local Repository box." style="width:100%; max-width:860px;">
+
+---
+
+### Slide 8: Path 1 - Starting with `git init`
+
+```bash
+mkdir my-project
+cd my-project
+git init
+```
+
+* Creates a new Git repo in an existing folder
+* Adds a hidden `.git` directory
+* Best when starting a brand-new local project
+
+<img src="../assets/svg/slide8-git-init-folder.svg" alt="Before: empty my-project folder with no Git tracking. After running git init: same folder now contains a hidden .git directory." style="width:100%; max-width:860px;">
+
+---
+
+### Slide 9: Path 2 - Starting with `git clone`
+
+```bash
+git clone <repo-url>
+cd <repo-name>
+```
+
+* Copies an existing remote repo to your computer
+* Includes files and Git history
+* Automatically connects to the remote as `origin`
+
+<img src="../assets/svg/slide9-git-clone-download.svg" alt="GitHub cloud on the left with an arrow labeled git clone pointing to a laptop on the right showing the cloned repo with files and git history." style="width:100%; max-width:860px;">
+
+---
+
+### Slide 10: The Basic Git Workflow
+
+1. Edit files
+2. Check status
+3. Stage changes
+4. Commit changes
+5. Push to GitHub
+
+<img src="../assets/svg/slide10-git-workflow-circle.svg" alt="Circular workflow diagram with five steps: Edit Files, git status, git add, git commit, git push — connected in a cycle." style="width:100%; max-width:860px;">
+
+---
+
+### Slide 11: Working Directory, Staging Area, Repository
+
+* Working directory: files you are editing
+* Staging area: changes selected for commit
+* Repository: saved project history
+
+**Commands:**
+
+```bash
+git status
+git add
+git commit
+```
+
+<img src="../assets/svg/slide11-working-staging-repo.svg" alt="Three boxes: Working Directory on left with changed files, arrow labeled git add to Staging Area in center with selected files, arrow labeled git commit to Repository on right showing commit history." style="width:100%; max-width:860px;">
+
+---
+
+### Slide 12: Checking Your Repo with `git status`
+
+```bash
+git status
+```
+
+* Shows changed files
+* Shows staged and unstaged changes
+* Helps you know what Git sees
+
+<img src="../assets/svg/slide12-git-status-terminal.svg" alt="Terminal window showing git status output with modified and untracked files listed in red." style="width:100%; max-width:860px;">
+
+---
+
+### Slide 13: Staging Changes with `git add`
+
+```bash
+git add filename
+git add .
+```
+
+* `git add filename` stages one file
+* `git add .` stages all current changes
+* Staging lets you choose what goes into the next commit
+
+<img src="../assets/svg/slide13-staging-files.svg" alt="Two changed files with arrows pointing into a staging area box, a third file with a dashed arrow marked not staged, then arrow from staging area to commit." style="width:100%; max-width:860px;">
+
+---
+
+### Slide 14: Saving Changes with `git commit`
+
+```bash
+git commit -m "Add homepage"
+```
+
+* A commit is a saved snapshot
+* Commit messages should explain the change
+* Good commits are small and focused
+
+<img src="../assets/svg/slide14-commit-timeline.svg" alt="Horizontal timeline with four labeled commit points: Initial commit, Add homepage, Fix typo, and Add styles marked as HEAD." style="width:100%; max-width:860px;">
+
+---
+
+### Slide 15: Viewing History with `git log`
+
+```bash
+git log
+git log --oneline
+```
+
+* Shows previous commits
+* Includes commit ID, author, date, and message
+* Useful for understanding project history
+
+<img src="../assets/svg/slide15-git-log-history.svg" alt="Terminal showing git log --oneline output with four commits listed, HEAD pointing to the most recent." style="width:100%; max-width:860px;">
+
+---
+
+### Slide 16: Comparing Changes with `git diff`
+
+```bash
+git diff
+```
+
+* Shows what changed before committing
+* Helps review your work
+* Reduces accidental commits
+
+<img src="../assets/svg/slide16-git-diff-comparison.svg" alt="Terminal showing git diff output with a removed line in red prefixed with minus and an added line in green prefixed with plus." style="width:100%; max-width:860px;">
+
+---
+
+### Slide 17: Intro to Remotes
+
+* A remote is a linked copy of your repo hosted elsewhere
+* GitHub repos are commonly used as remotes
+* `origin` is the default remote name
+* Remotes let you push and pull work
+
+**Command:**
+
+```bash
+git remote -v
+```
+
+<img src="../assets/svg/slide17-remote-origin.svg" alt="Local repository on left connected via git push and git pull arrows to GitHub origin on right, labeled with github.com/user/repo." style="width:100%; max-width:860px;">
+
+---
+
+### Slide 18: Pushing Changes to GitHub
+
+```bash
+git push
+```
+
+* Sends local commits to the remote repo
+* Updates GitHub with your latest work
+* Requires permission to push
+
+<img src="../assets/svg/slide18-git-push.svg" alt="Local repository on left with a bold arrow labeled git push pointing right to a GitHub cloud showing the repo is now up to date." style="width:100%; max-width:860px;">
+
+---
+
+### Slide 19: Pulling Changes from GitHub
+
+```bash
+git pull
+```
+
+* Brings remote changes down to your computer
+* Keeps your local repo up to date
+* Mention only briefly; deeper syncing comes later
+
+<img src="../assets/svg/slide19-git-pull.svg" alt="GitHub cloud on the left with a bold arrow labeled git pull pointing right to a local repository showing the new commit has been downloaded." style="width:100%; max-width:860px;">
+
+---
+
+### Slide 20: Demo - Local-First Workflow
+
+Demo steps:
+
+1. Create folder
+2. Run `git init`
+3. Add a file
+4. Stage and commit
+5. View history
+
+<img src="../assets/svg/slide20-demo-checklist.svg" alt="Numbered checklist of five demo steps: Create folder, git init, Add a file, Stage and commit, View history with git log." style="width:100%; max-width:860px;">
+
+---
+
+### Slide 21: Demo - GitHub-First Workflow
+
+Demo steps:
+
+1. Open GitHub repo
+2. Copy clone URL
+3. Run `git clone`
+4. Edit a file
+5. Commit
+6. Push
+
+<img src="../assets/svg/slide21-github-first-workflow.svg" alt="Three panels: GitHub repo page with clone URL on left, terminal with git clone, edit, commit, push commands in the middle, and updated GitHub repo on the right." style="width:100%; max-width:860px;">
+
+---
+
+### Slide 22: Hands-On Activity
+
+Students complete:
+
+* `git init` workflow
+* `git clone` workflow
+* One commit in each repo
+* One push to GitHub
+
+<img src="../assets/svg/slide22-practice-checklist.svg" alt="Checklist with four items: complete git init workflow, complete git clone workflow, make one commit in each repo, push changes to GitHub." style="width:100%; max-width:860px;">
+
+---
+
+### Slide 23: Common Mistakes
+
+* Forgetting to `cd` into the repo
+* Forgetting to stage before commit
+* Trying to push without committing
+* Cloning into the wrong folder
+* Confusing Git with GitHub
+
+<img src="../assets/svg/slide23-common-mistakes.svg" alt="Table of five common mistakes on the left with their fixes on the right, including forgetting cd, forgetting git add, pushing without committing, cloning to the wrong folder, and confusing Git with GitHub." style="width:100%; max-width:860px;">
+
+---
+
+### Slide 24: Key Commands Recap
+
+```bash
+git init
+git clone
+git status
+git add
+git commit
+git log
+git diff
+git remote -v
+git push
+git pull
+```
+
+<img src="../assets/svg/slide24-command-cheatsheet.svg" alt="Two-column cheat sheet of all ten key Git commands with short descriptions, plus a tip to use git status often." style="width:100%; max-width:860px;">
+
+---
+
+### Slide 25: Wrap-Up
+
+By now, students can:
+
+* Explain Git vs. GitHub
+* Create a repo with `git init`
+* Clone a repo with `git clone`
+* Commit changes
+* Push to GitHub
+
+<img src="../assets/svg/slide25-wrap-up-summary.svg" alt="Summary visual: local repository on the left with commit history, bidirectional arrows for git push and git pull, and GitHub origin on the right labeled as backup and collaboration." style="width:100%; max-width:860px;">
+
+
