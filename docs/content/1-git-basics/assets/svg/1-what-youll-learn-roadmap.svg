@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 200" width="860" height="200" font-family="sans-serif">
+  <!-- Road line -->
+  <line x1="60" y1="90" x2="800" y2="90" stroke="#7ec8e3" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- Step 1 -->
+  <circle cx="60" cy="90" r="22" fill="#2a9d8f" stroke="#fff" stroke-width="3"/>
+  <text x="60" y="95" text-anchor="middle" fill="#fff" font-size="15" font-weight="bold">1</text>
+  <text x="60" y="130" text-anchor="middle" fill="#e0e0e0" font-size="11" font-weight="bold">Git &amp;</text>
+  <text x="60" y="143" text-anchor="middle" fill="#e0e0e0" font-size="11" font-weight="bold">GitHub</text>
+
+  <!-- Step 2 -->
+  <circle cx="212" cy="90" r="22" fill="#2a9d8f" stroke="#fff" stroke-width="3"/>
+  <text x="212" y="95" text-anchor="middle" fill="#fff" font-size="15" font-weight="bold">2</text>
+  <text x="212" y="130" text-anchor="middle" fill="#e0e0e0" font-size="11" font-weight="bold">Repos</text>
+
+  <!-- Step 3 -->
+  <circle cx="364" cy="90" r="22" fill="#2a9d8f" stroke="#fff" stroke-width="3"/>
+  <text x="364" y="95" text-anchor="middle" fill="#fff" font-size="15" font-weight="bold">3</text>
+  <text x="364" y="130" text-anchor="middle" fill="#e0e0e0" font-size="11" font-weight="bold">git init</text>
+
+  <!-- Step 4 -->
+  <circle cx="516" cy="90" r="22" fill="#2a9d8f" stroke="#fff" stroke-width="3"/>
+  <text x="516" y="95" text-anchor="middle" fill="#fff" font-size="15" font-weight="bold">4</text>
+  <text x="516" y="130" text-anchor="middle" fill="#e0e0e0" font-size="11" font-weight="bold">git clone</text>
+
+  <!-- Step 5 -->
+  <circle cx="668" cy="90" r="22" fill="#2a9d8f" stroke="#fff" stroke-width="3"/>
+  <text x="668" y="95" text-anchor="middle" fill="#fff" font-size="15" font-weight="bold">5</text>
+  <text x="668" y="130" text-anchor="middle" fill="#e0e0e0" font-size="11" font-weight="bold">Commit</text>
+
+  <!-- Step 6 -->
+  <circle cx="800" cy="90" r="22" fill="#e76f51" stroke="#fff" stroke-width="3"/>
+  <text x="800" y="95" text-anchor="middle" fill="#fff" font-size="15" font-weight="bold">6</text>
+  <text x="800" y="130" text-anchor="middle" fill="#e0e0e0" font-size="11" font-weight="bold">Push to</text>
+  <text x="800" y="143" text-anchor="middle" fill="#e0e0e0" font-size="11" font-weight="bold">GitHub</text>
+
+  <!-- Arrows between steps -->
+  <polygon points="105,86 118,90 105,94" fill="#7ec8e3"/>
+  <polygon points="257,86 270,90 257,94" fill="#7ec8e3"/>
+  <polygon points="409,86 422,90 409,94" fill="#7ec8e3"/>
+  <polygon points="561,86 574,90 561,94" fill="#7ec8e3"/>
+  <polygon points="713,86 726,90 713,94" fill="#7ec8e3"/>
+
+  <!-- Title -->
+  <text x="430" y="30" text-anchor="middle" fill="#aaaaaa" font-size="14" font-style="italic">What You'll Learn Today</text>
+</svg>

@@ -35,3 +35,16 @@ Git Logo by Jason Long is licensed under the Creative Commons Attribution 3.0 Un
 :::
 
 ---
+
+### What You’ll Learn Today
+
+* What is Git and why use it
+* How repositories work
+* How to use `git init`
+* How to use `git clone`
+* How to commit changes
+* How to push changes to GitHub
+
+<img src="../assets/svg/1-what-youll-learn-roadmap.svg" alt="Roadmap timeline showing 6 learning steps: Git and GitHub, Repos, git init, git clone, Commit, Push to GitHub" style="width:100%; max-width:860px;">
+
+---
