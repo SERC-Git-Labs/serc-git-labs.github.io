@@ -16,9 +16,9 @@
   <text x="108" y="76" fill="#55dd55" font-size="13">$ git status</text>
   <text x="108" y="98" fill="#aaaaaa" font-size="12">On branch main</text>
   <text x="108" y="115" fill="#aaaaaa" font-size="12">Changes not staged for commit:</text>
-  <text x="108" y="132" fill="#aaaaaa" font-size="12">  (use "git add &lt;file&gt;..." to update what will be committed)</text>
-  <text x="108" y="152" fill="#e76f51" font-size="12">        modified:   index.html</text>
+  <text x="108" y="132" fill="#aaaaaa" font-size="12" xml:space="preserve">  (use "git add &lt;file&gt;..." to update what will be committed)</text>
+  <text x="108" y="152" fill="#e76f51" font-size="12" xml:space="preserve">        modified:   index.html</text>
   <text x="108" y="172" fill="#aaaaaa" font-size="12">Untracked files:</text>
-  <text x="108" y="190" fill="#e76f51" font-size="12">        style.css</text>
+  <text x="108" y="190" fill="#e76f51" font-size="12" xml:space="preserve">        style.css</text>
 
 </svg>
