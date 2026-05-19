@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 360" role="img" aria-labelledby="title desc">
+  <title id="title">Centralized versus distributed version control</title>
+  <desc id="desc">Comparison diagram. Left side shows centralized VCS with one central server and multiple clients. Right side shows distributed VCS with multiple full local repositories that can sync with each other and with a remote.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#eef2ff"/>
+    </linearGradient>
+    <style>
+      .panel { fill: #ffffff; stroke: #cbd5e1; stroke-width: 2; }
+      .title { font: 700 24px 'Segoe UI', Arial, sans-serif; fill: #0f172a; }
+      .subtitle { font: 600 16px 'Segoe UI', Arial, sans-serif; fill: #334155; }
+      .label { font: 600 13px 'Segoe UI', Arial, sans-serif; fill: #0f172a; }
+      .mini { font: 600 12px 'Segoe UI', Arial, sans-serif; fill: #475569; }
+    </style>
+    <marker id="arrowBlue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#2563eb"/>
+    </marker>
+    <marker id="arrowGreen" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#059669"/>
+    </marker>
+  </defs>
+
+  <rect width="1100" height="360" fill="url(#bg)"/>
+
+  <rect x="28" y="24" width="508" height="312" rx="16" class="panel"/>
+  <rect x="564" y="24" width="508" height="312" rx="16" class="panel"/>
+
+  <text x="50" y="58" class="title">Centralized VCS</text>
+  <text x="586" y="58" class="title">Distributed VCS (Git)</text>
+
+  <rect x="206" y="130" width="160" height="70" rx="12" fill="#dbeafe" stroke="#60a5fa" stroke-width="2"/>
+  <text x="286" y="158" text-anchor="middle" class="label">Central Server</text>
+  <text x="286" y="177" text-anchor="middle" class="mini">Single source of truth</text>
+
+  <rect x="66" y="246" width="110" height="52" rx="10" fill="#f1f5f9" stroke="#94a3b8"/>
+  <text x="121" y="276" text-anchor="middle" class="mini">Client A</text>
+
+  <rect x="231" y="246" width="110" height="52" rx="10" fill="#f1f5f9" stroke="#94a3b8"/>
+  <text x="286" y="276" text-anchor="middle" class="mini">Client B</text>
+
+  <rect x="396" y="246" width="110" height="52" rx="10" fill="#f1f5f9" stroke="#94a3b8"/>
+  <text x="451" y="276" text-anchor="middle" class="mini">Client C</text>
+
+  <line x1="121" y1="246" x2="264" y2="201" stroke="#2563eb" stroke-width="2.2" marker-end="url(#arrowBlue)"/>
+  <line x1="286" y1="246" x2="286" y2="202" stroke="#2563eb" stroke-width="2.2" marker-end="url(#arrowBlue)"/>
+  <line x1="451" y1="246" x2="308" y2="201" stroke="#2563eb" stroke-width="2.2" marker-end="url(#arrowBlue)"/>
+
+  <text x="50" y="322" class="mini">All commits go through one central server.</text>
+
+  <rect x="708" y="114" width="110" height="52" rx="10" fill="#dcfce7" stroke="#34d399"/>
+  <text x="763" y="144" text-anchor="middle" class="mini">Dev A Repo</text>
+
+  <rect x="888" y="114" width="110" height="52" rx="10" fill="#dcfce7" stroke="#34d399"/>
+  <text x="943" y="144" text-anchor="middle" class="mini">Dev B Repo</text>
+
+  <rect x="798" y="222" width="110" height="52" rx="10" fill="#dcfce7" stroke="#34d399"/>
+  <text x="853" y="252" text-anchor="middle" class="mini">Dev C Repo</text>
+
+  <rect x="956" y="222" width="92" height="52" rx="10" fill="#e2e8f0" stroke="#94a3b8"/>
+  <text x="1002" y="252" text-anchor="middle" class="mini">Remote</text>
+
+  <line x1="818" y1="140" x2="888" y2="140" stroke="#059669" stroke-width="2.2" marker-end="url(#arrowGreen)"/>
+  <line x1="888" y1="146" x2="818" y2="146" stroke="#059669" stroke-width="2.2" marker-end="url(#arrowGreen)"/>
+
+  <line x1="775" y1="166" x2="840" y2="222" stroke="#059669" stroke-width="2.2" marker-end="url(#arrowGreen)"/>
+  <line x1="931" y1="166" x2="866" y2="222" stroke="#059669" stroke-width="2.2" marker-end="url(#arrowGreen)"/>
+
+  <line x1="908" y1="248" x2="956" y2="248" stroke="#059669" stroke-width="2.2" marker-end="url(#arrowGreen)"/>
+  <line x1="956" y1="254" x2="908" y2="254" stroke="#059669" stroke-width="2.2" marker-end="url(#arrowGreen)"/>
+
+  <text x="586" y="322" class="mini">Each developer has a full local repository and can sync peer-to-peer or via remote.</text>
+</svg>

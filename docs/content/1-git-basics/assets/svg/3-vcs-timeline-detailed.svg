@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 360" role="img" aria-labelledby="desc">
+  <desc id="desc">Version control systems timeline from 1972 to 2006 showing the transition from centralized systems to distributed VCS.</desc>
+
+  <defs>
+    <linearGradient id="centralGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1e40af"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <linearGradient id="distributedGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#34d399"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- <rect width="1400" height="360" fill="#0b1220"/> -->
+  <rect x="40" y="20" width="1320" height="320" rx="20" fill="#0f172a" stroke="#2d3a6c" stroke-width="2"/>
+
+  <!-- Timeline base line -->
+  <line x1="140" y1="180" x2="1280" y2="180" stroke="#64748b" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Year markers and ticks -->
+  <g id="years">
+    <!-- 1972 -->
+    <line x1="180" y1="175" x2="180" y2="195" stroke="#64748b" stroke-width="3"/>
+    <text x="156" y="218" fill="#cbd5e1" font-size="16" font-family="Segoe UI, Arial, sans-serif" font-weight="600">1972</text>
+
+    <!-- 1982 -->
+    <line x1="330" y1="175" x2="330" y2="195" stroke="#64748b" stroke-width="3"/>
+    <text x="306" y="218" fill="#cbd5e1" font-size="16" font-family="Segoe UI, Arial, sans-serif" font-weight="600">1982</text>
+
+    <!-- 1990 -->
+    <line x1="480" y1="175" x2="480" y2="195" stroke="#64748b" stroke-width="3"/>
+    <text x="456" y="218" fill="#cbd5e1" font-size="16" font-family="Segoe UI, Arial, sans-serif" font-weight="600">1990</text>
+
+    <!-- 1995 -->
+    <line x1="630" y1="175" x2="630" y2="195" stroke="#64748b" stroke-width="3"/>
+    <text x="606" y="218" fill="#cbd5e1" font-size="16" font-family="Segoe UI, Arial, sans-serif" font-weight="600">1995</text>
+
+    <!-- 2000 -->
+    <line x1="780" y1="175" x2="780" y2="195" stroke="#64748b" stroke-width="3"/>
+    <text x="756" y="218" fill="#cbd5e1" font-size="16" font-family="Segoe UI, Arial, sans-serif" font-weight="600">2000</text>
+
+    <!-- 2005 -->
+    <line x1="980" y1="175" x2="980" y2="195" stroke="#64748b" stroke-width="3"/>
+    <text x="956" y="218" fill="#cbd5e1" font-size="16" font-family="Segoe UI, Arial, sans-serif" font-weight="600">2005</text>
+
+    <!-- 2006 -->
+    <line x1="1050" y1="175" x2="1050" y2="195" stroke="#64748b" stroke-width="3"/>
+    <text x="1026" y="218" fill="#cbd5e1" font-size="16" font-family="Segoe UI, Arial, sans-serif" font-weight="600">2006</text>
+  </g>
+
+  <!-- Centralized and Distributed labels -->
+  <text x="140" y="60" fill="#3b82f6" font-size="14" font-family="Segoe UI, Arial, sans-serif" font-weight="700">CENTRALIZED</text>
+  <text x="980" y="60" fill="#34d399" font-size="14" font-family="Segoe UI, Arial, sans-serif" font-weight="700">DISTRIBUTED</text>
+
+  <!-- Systems with staggered vertical positions -->
+  <g filter="url(#shadow)">
+    <!-- SCCS 1972 - upper -->
+    <circle cx="180" cy="180" r="10" fill="#60a5fa" stroke="#1e40af" stroke-width="2"/>
+    <text x="180" y="110" fill="#93c5fd" font-size="16" font-family="Segoe UI, Arial, sans-serif" font-weight="700" text-anchor="middle">SCCS</text>
+    <line x1="180" y1="118" x2="180" y2="170" stroke="#3b82f6" stroke-width="1.5"/>
+
+    <!-- RCS 1982 - lower -->
+    <circle cx="330" cy="180" r="10" fill="#60a5fa" stroke="#1e40af" stroke-width="2"/>
+    <text x="330" y="270" fill="#93c5fd" font-size="16" font-family="Segoe UI, Arial, sans-serif" font-weight="700" text-anchor="middle">RCS</text>
+    <line x1="330" y1="250" x2="330" y2="170" stroke="#3b82f6" stroke-width="1.5"/>
+
+    <!-- CVS 1990 - upper -->
+    <circle cx="480" cy="180" r="10" fill="#60a5fa" stroke="#1e40af" stroke-width="2"/>
+    <text x="480" y="110" fill="#93c5fd" font-size="16" font-family="Segoe UI, Arial, sans-serif" font-weight="700" text-anchor="middle">CVS</text>
+    <line x1="480" y1="118" x2="480" y2="170" stroke="#3b82f6" stroke-width="1.5"/>
+
+    <!-- Perforce 1995 - lower -->
+    <circle cx="630" cy="180" r="10" fill="#60a5fa" stroke="#1e40af" stroke-width="2"/>
+    <text x="630" y="270" fill="#93c5fd" font-size="16" font-family="Segoe UI, Arial, sans-serif" font-weight="700" text-anchor="middle">Perforce</text>
+    <line x1="630" y1="250" x2="630" y2="170" stroke="#3b82f6" stroke-width="1.5"/>
+
+    <!-- Subversion 2000 - upper -->
+    <circle cx="780" cy="180" r="10" fill="#60a5fa" stroke="#1e40af" stroke-width="2"/>
+    <text x="780" y="110" fill="#93c5fd" font-size="16" font-family="Segoe UI, Arial, sans-serif" font-weight="700" text-anchor="middle">Subversion</text>
+    <line x1="780" y1="118" x2="780" y2="170" stroke="#3b82f6" stroke-width="1.5"/>
+
+    <!-- BitKeeper 2000 - lower -->
+    <circle cx="780" cy="180" r="11" fill="#34d399" stroke="#059669" stroke-width="2"/>
+    <text x="780" y="270" fill="#86efac" font-size="16" font-family="Segoe UI, Arial, sans-serif" font-weight="700" text-anchor="middle">BitKeeper</text>
+    <line x1="780" y1="250" x2="780" y2="191" stroke="#34d399" stroke-width="1.5"/>
+
+    <!-- Distributed systems -->
+    <!-- Bazaar 2005 - lower (slightly earlier) -->
+    <circle cx="970" cy="180" r="11" fill="#34d399" stroke="#059669" stroke-width="2"/>
+    <text x="970" y="270" fill="#86efac" font-size="16" font-family="Segoe UI, Arial, sans-serif" font-weight="700" text-anchor="middle">Bazaar</text>
+    <line x1="970" y1="250" x2="970" y2="191" stroke="#34d399" stroke-width="1.5"/>
+
+    <!-- Git 2005 - upper -->
+    <circle cx="980" cy="180" r="11" fill="#34d399" stroke="#059669" stroke-width="2"/>
+    <text x="980" y="110" fill="#d1fae5" font-size="18" font-family="Segoe UI, Arial, sans-serif" font-weight="700" text-anchor="middle">Git</text>
+    <line x1="980" y1="118" x2="980" y2="169" stroke="#34d399" stroke-width="1.5"/>
+
+    <!-- Mercurial 2005 - middle -->
+    <circle cx="980" cy="180" r="11" fill="#34d399" stroke="#059669" stroke-width="2"/>
+    <text x="980" y="145" fill="#86efac" font-size="16" font-family="Segoe UI, Arial, sans-serif" font-weight="700" text-anchor="middle">Mercurial</text>
+    <line x1="980" y1="152" x2="980" y2="169" stroke="#34d399" stroke-width="1.5"/>
+
+    <!-- TFS 2006 - lower -->
+    <circle cx="1050" cy="180" r="10" fill="#60a5fa" stroke="#1e40af" stroke-width="2"/>
+    <text x="1050" y="270" fill="#93c5fd" font-size="16" font-family="Segoe UI, Arial, sans-serif" font-weight="700" text-anchor="middle">TFS</text>
+    <line x1="1050" y1="250" x2="1050" y2="170" stroke="#3b82f6" stroke-width="1.5"/>
+  </g>
+</svg>

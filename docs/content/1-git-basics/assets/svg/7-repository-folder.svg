@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 200" width="860" height="200" font-family="sans-serif">
+
+  <!-- Outer folder -->
+  <rect x="200" y="30" width="460" height="150" rx="10" fill="#2d3748" stroke="#e2e8f0" stroke-width="2"/>
+  <rect x="200" y="18" width="120" height="22" rx="6" fill="#2d3748" stroke="#e2e8f0" stroke-width="2"/>
+  <text x="260" y="33" text-anchor="middle" fill="#e2e8f0" font-size="12">my-project/</text>
+
+  <!-- Folder label -->
+  <text x="430" y="58" text-anchor="middle" fill="#e2e8f0" font-size="13" font-weight="bold">my-project/</text>
+
+  <!-- Files inside -->
+  <text x="255" y="85" fill="#a0aec0" font-size="12" font-family="monospace">📄 README.md</text>
+  <text x="255" y="105" fill="#a0aec0" font-size="12" font-family="monospace">📄 index.html</text>
+  <text x="255" y="125" fill="#a0aec0" font-size="12" font-family="monospace">📄 style.css</text>
+
+  <!-- .git folder (highlighted) -->
+  <rect x="420" y="78" width="210" height="90" rx="8" fill="#1a202c" stroke="#2a9d8f" stroke-width="2.5" stroke-dasharray="6,3"/>
+  <rect x="420" y="66" width="80" height="20" rx="5" fill="#1a202c" stroke="#2a9d8f" stroke-width="2"/>
+  <text x="460" y="80" text-anchor="middle" fill="#2a9d8f" font-size="11">.git/</text>
+  <text x="525" y="103" text-anchor="middle" fill="#2a9d8f" font-size="11" font-weight="bold">.git/ (hidden)</text>
+  <text x="525" y="122" text-anchor="middle" fill="#718096" font-size="10" font-family="monospace">config</text>
+  <text x="525" y="138" text-anchor="middle" fill="#718096" font-size="10" font-family="monospace">HEAD</text>
+  <text x="525" y="154" text-anchor="middle" fill="#718096" font-size="10" font-family="monospace">objects/  refs/</text>
+
+  <!-- Caption -->
+  <text x="430" y="192" text-anchor="middle" fill="#a0aec0" font-size="11" font-style="italic">Git stores all history inside the hidden .git directory</text>
+
+</svg>

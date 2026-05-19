@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 190" width="860" height="190" font-family="sans-serif">
+
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#2a9d8f"/>
+    </marker>
+  </defs>
+
+  <!-- Box 1: Working Directory -->
+  <rect x="20" y="30" width="230" height="130" rx="10" fill="#2d2020" stroke="#e76f51" stroke-width="2"/>
+  <text x="135" y="58" text-anchor="middle" fill="#e76f51" font-size="13" font-weight="bold">Working Directory</text>
+  <text x="135" y="78" text-anchor="middle" fill="#a0aec0" font-size="11">files you are editing</text>
+  <text x="135" y="105" text-anchor="middle" fill="#718096" font-size="11" font-family="monospace">📄 README.md</text>
+  <text x="135" y="122" text-anchor="middle" fill="#718096" font-size="11" font-family="monospace">📄 index.html</text>
+  <text x="135" y="145" text-anchor="middle" fill="#f4a261" font-size="10" font-family="monospace">git status</text>
+
+  <!-- Arrow 1 -->
+  <line x1="254" y1="95" x2="308" y2="95" stroke="#2a9d8f" stroke-width="2.5" marker-end="url(#arr)"/>
+  <text x="281" y="83" text-anchor="middle" fill="#2a9d8f" font-size="10" font-weight="bold" font-family="monospace">git add</text>
+
+  <!-- Outer Group: .git Directory -->
+  <rect x="300" y="18" width="546" height="154" rx="12" fill="none" stroke="#94a3b8" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="573" y="14" text-anchor="middle" fill="#94a3b8" font-size="10" font-family="monospace">.git directory</text>
+
+  <!-- Box 2: Staging Area -->
+  <rect x="312" y="30" width="230" height="130" rx="10" fill="#1a2020" stroke="#2a9d8f" stroke-width="2"/>
+  <text x="427" y="58" text-anchor="middle" fill="#2a9d8f" font-size="13" font-weight="bold">Staging Area</text>
+  <text x="427" y="78" text-anchor="middle" fill="#a0aec0" font-size="11">changes queued for commit</text>
+  <text x="427" y="105" text-anchor="middle" fill="#718096" font-size="11" font-family="monospace">✅ README.md</text>
+  <text x="427" y="122" text-anchor="middle" fill="#4a5568" font-size="11" font-family="monospace">— index.html</text>
+  <text x="427" y="145" text-anchor="middle" fill="#f4a261" font-size="10" font-family="monospace">git status</text>
+
+  <!-- Arrow 2 -->
+  <line x1="546" y1="95" x2="600" y2="95" stroke="#2a9d8f" stroke-width="2.5" marker-end="url(#arr)"/>
+  <text x="573" y="83" text-anchor="middle" fill="#2a9d8f" font-size="10" font-weight="bold" font-family="monospace">git commit</text>
+
+  <!-- Box 3: Repository -->
+  <rect x="604" y="30" width="230" height="130" rx="10" fill="#1a1a2e" stroke="#7ec8e3" stroke-width="2"/>
+  <text x="719" y="58" text-anchor="middle" fill="#7ec8e3" font-size="13" font-weight="bold">Repository</text>
+  <text x="719" y="78" text-anchor="middle" fill="#a0aec0" font-size="11">saved project history</text>
+  <text x="719" y="105" text-anchor="middle" fill="#718096" font-size="10" font-family="monospace">● abc1234 Add readme</text>
+  <text x="719" y="120" text-anchor="middle" fill="#718096" font-size="10" font-family="monospace">● def5678 Initial commit</text>
+  <text x="719" y="145" text-anchor="middle" fill="#f4a261" font-size="10" font-family="monospace">git log</text>
+
+</svg>
