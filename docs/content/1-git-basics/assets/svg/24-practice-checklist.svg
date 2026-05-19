@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 200" width="860" height="200" font-family="sans-serif">
+
+  <rect x="150" y="10" width="560" height="180" rx="12" fill="#1a1a2e" stroke="#2a9d8f" stroke-width="2"/>
+  <text x="430" y="40" text-anchor="middle" fill="#2a9d8f" font-size="15" font-weight="bold">Hands-On Activity Checklist</text>
+
+  <!-- Checkboxes -->
+  <rect x="188" y="56" width="22" height="22" rx="4" fill="none" stroke="#2a9d8f" stroke-width="2"/>
+  <text x="224" y="72" fill="#e0e0e0" font-size="13">Complete the <tspan font-family="monospace" fill="#7ec8e3">git init</tspan> workflow</text>
+
+  <rect x="188" y="86" width="22" height="22" rx="4" fill="none" stroke="#2a9d8f" stroke-width="2"/>
+  <text x="224" y="102" fill="#e0e0e0" font-size="13">Complete the <tspan font-family="monospace" fill="#7ec8e3">git clone</tspan> workflow</text>
+
+  <rect x="188" y="116" width="22" height="22" rx="4" fill="none" stroke="#2a9d8f" stroke-width="2"/>
+  <text x="224" y="132" fill="#e0e0e0" font-size="13">Make one commit in each repo</text>
+
+  <rect x="188" y="146" width="22" height="22" rx="4" fill="none" stroke="#e76f51" stroke-width="2"/>
+  <text x="224" y="162" fill="#e0e0e0" font-size="13">Push changes to GitHub</text>
+
+  <!-- Pencil icon hint -->
+  <text x="680" y="170" fill="#718096" font-size="22">✏️</text>
+
+</svg>

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 220" width="860" height="220" font-family="sans-serif">
+
+  <rect x="20" y="10" width="820" height="200" rx="12" fill="#1e1212" stroke="#e76f51" stroke-width="2"/>
+  <text x="430" y="38" text-anchor="middle" fill="#e76f51" font-size="15" font-weight="bold">⚠️ Common Mistakes</text>
+
+  <!-- Table header -->
+  <rect x="36" y="48" width="380" height="26" rx="4" fill="#2d1a1a" stroke="#e76f51" stroke-width="1"/>
+  <rect x="444" y="48" width="380" height="26" rx="4" fill="#2d1a1a" stroke="#e76f51" stroke-width="1"/>
+  <text x="226" y="65" text-anchor="middle" fill="#e76f51" font-size="12" font-weight="bold">Mistake</text>
+  <text x="634" y="65" text-anchor="middle" fill="#e76f51" font-size="12" font-weight="bold">Fix</text>
+
+  <!-- Row 1 -->
+  <text x="52" y="92" fill="#f4a261" font-size="12">⚠ Forgetting to cd into the repo</text>
+  <text x="460" y="92" fill="#a0aec0" font-size="12">Run cd &lt;repo-name&gt; after clone</text>
+
+  <!-- Row 2 -->
+  <text x="52" y="116" fill="#f4a261" font-size="12">⚠ Forgetting to stage before commit</text>
+  <text x="460" y="116" fill="#a0aec0" font-size="12">Run git add . before git commit</text>
+
+  <!-- Row 3 -->
+  <text x="52" y="140" fill="#f4a261" font-size="12">⚠ Trying to push without committing</text>
+  <text x="460" y="140" fill="#a0aec0" font-size="12">Commit first, then git push</text>
+
+  <!-- Row 4 -->
+  <text x="52" y="164" fill="#f4a261" font-size="12">⚠ Cloning into the wrong folder</text>
+  <text x="460" y="164" fill="#a0aec0" font-size="12">Check your cwd with pwd</text>
+
+  <!-- Row 5 -->
+  <text x="52" y="188" fill="#f4a261" font-size="12">⚠ Confusing Git with GitHub</text>
+  <text x="460" y="188" fill="#a0aec0" font-size="12">Git = local tool, GitHub = website</text>
+
+  <!-- Row dividers -->
+  <line x1="36" y1="100" x2="824" y2="100" stroke="#3d2020" stroke-width="1"/>
+  <line x1="36" y1="124" x2="824" y2="124" stroke="#3d2020" stroke-width="1"/>
+  <line x1="36" y1="148" x2="824" y2="148" stroke="#3d2020" stroke-width="1"/>
+  <line x1="36" y1="172" x2="824" y2="172" stroke="#3d2020" stroke-width="1"/>
+  <!-- Column divider -->
+  <line x1="430" y1="48" x2="430" y2="204" stroke="#e76f51" stroke-width="1"/>
+
+</svg>

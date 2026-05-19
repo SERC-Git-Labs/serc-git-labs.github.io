@@ -381,33 +381,75 @@ git pull
 
 Demo steps:
 
+:::::::::::::: {.columns}
+::: {.column width="34%"}
+
 1. Create folder
-2. Run: `git init`
-3. Add a file: `echo "Hello Git" > README.md`
-4. Stage: `git add README.md`
-5. Commit: `git commit -m "Add README"`
+2. Initialize
+3. Add a file
+4. Stage
+5. Commit
 6. View history
 
-<img src="assets/svg/22-demo-checklist.svg" alt="Numbered checklist of five demo steps: Create folder, git init, Add a file, Stage and commit, View history with git log." style="width:100%; max-width:860px;">
+:::
+::: {.column width="66%"}
+
+```bash
+mkdir gitdemo && cd gitdemo
+git init
+echo "Hello Git" > README.md
+git add README.md
+git commit -m "Add README"
+git log
+```
+
+:::
+::::::::::::::
+
+<!-- <img src="assets/svg/slide20-local-first-workflow.svg" alt="Two-panel demo visual: local repository history with a new Add README commit on the left, and terminal commands with commit output on the right." style="width:100%; max-width:860px;"> -->
+
+::: notes
+[TODO notes about the demo, what to highlight, and how it shows the local-first workflow]
+:::
 
 ---
 
-### Demo - GitHub-First Workflow
+### Demo - Remote-First Workflow
 
 Demo steps:
 
-1. Open GitHub repo
-2. Copy clone URL
-3. Run `git clone`
-4. Edit a file
+:::::::::::::: {.columns}
+::: {.column width="36%"}
+
+<div style="font-size:0.9em; white-space: nowrap;">
+1. Copy remote URL
+2. Clone repo
+3. Edit a file
+4. Stage changes
 5. Commit
 6. Push
+</div>
 
-<img src="assets/svg/slide21-github-first-workflow.svg" alt="Three panels: GitHub repo page with clone URL on left, terminal with git clone, edit, commit, push commands in the middle, and updated GitHub repo on the right." style="width:100%; max-width:860px;">
+:::
+::: {.column width="66%"}
+
+```bash
+git clone <repo-url>
+cd <repo-name>
+echo "Changes" >> README.md
+git add README.md
+git commit -m "Update README"
+git push
+```
+
+:::
+::::::::::::::
+
+<img src="assets/svg/23-github-first-workflow.svg" alt="Three panels: GitHub repo page with clone URL on left, terminal with git clone, edit, commit, push commands in the middle, and updated GitHub repo on the right." style="width:100%; max-width:860px;">
 
 ---
 
-### Slide 22: Hands-On Activity
+### Exercise: Hands-On Activity
 
 Students complete:
 
@@ -416,11 +458,13 @@ Students complete:
 * One commit in each repo
 * One push to GitHub
 
-<img src="assets/svg/slide22-practice-checklist.svg" alt="Checklist with four items: complete git init workflow, complete git clone workflow, make one commit in each repo, push changes to GitHub." style="width:100%; max-width:860px;">
+<img src="assets/svg/24-practice-checklist.svg" alt="Checklist with four items: complete git init workflow, complete git clone workflow, make one commit in each repo, push changes to GitHub." style="width:100%; max-width:860px;">
+
+<!-- TODO: update with exercise links -->
 
 ---
 
-### Slide 23: Common Mistakes
+### Common Mistakes
 
 * Forgetting to `cd` into the repo
 * Forgetting to stage before commit
@@ -428,32 +472,36 @@ Students complete:
 * Cloning into the wrong folder
 * Confusing Git with GitHub
 
-<img src="assets/svg/slide23-common-mistakes.svg" alt="Table of five common mistakes on the left with their fixes on the right, including forgetting cd, forgetting git add, pushing without committing, cloning to the wrong folder, and confusing Git with GitHub." style="width:100%; max-width:860px;">
+<img src="assets/svg/25-common-mistakes.svg" alt="Table of five common mistakes on the left with their fixes on the right, including forgetting cd, forgetting git add, pushing without committing, cloning to the wrong folder, and confusing Git with GitHub." style="width:100%; max-width:860px;">
 
 ---
 
-### Slide 24: Key Commands Recap
+### Key Commands Recap
 
-```bash
-git init
-git clone
-git status
-git add
-git commit
-git log
-git diff
-git remote -v
-git push
-git pull
-```
+<div style="font-size:0.65em;">
+<table>
+  <tr><th>Command</th><th>Description</th></tr>
+  <tr><td><code>git init</code></td><td>Start a new Git repository</td></tr>
+  <tr><td><code>git clone</code></td><td>Copy an existing repository</td></tr>
+  <tr><td><code>git status</code></td><td>Check the status of your repo</td></tr>
+  <tr><td><code>git add</code></td><td>Stage changes for commit</td></tr>
+  <tr><td><code>git commit</code></td><td>Save changes to history</td></tr>
+  <tr><td><code>git log</code></td><td>View commit history</td></tr>
+  <tr><td><code>git diff</code></td><td>Compare changes before committing</td></tr>
+  <tr><td><code style="white-space: nowrap;">git remote -v</code></td><td>Check remote connections</td></tr>
+  <tr><td><code>git push</code></td><td>Send commits to remote repo</td></tr>
+  <tr><td><code>git pull</code></td><td>Fetch and merge remote changes</td></tr>
+</table>
 
-<img src="assets/svg/slide24-command-cheatsheet.svg" alt="Two-column cheat sheet of all ten key Git commands with short descriptions, plus a tip to use git status often." style="width:100%; max-width:860px;">
+💡 Tip: use `git status` often — it tells you what to do next
+</div>
 
 ---
 
-### Slide 25: Wrap-Up
+### Wrap-Up
 
 By now, students can:
+<!-- [TODO: change wording. Students are audience, not teachers] -->
 
 * Explain Git vs. GitHub
 * Create a repo with `git init`
@@ -461,4 +509,4 @@ By now, students can:
 * Commit changes
 * Push to GitHub
 
-<img src="assets/svg/slide25-wrap-up-summary.svg" alt="Summary visual: local repository on the left with commit history, bidirectional arrows for git push and git pull, and GitHub origin on the right labeled as backup and collaboration." style="width:100%; max-width:860px;">
+<img src="assets/svg/26-wrap-up-summary.svg" alt="Summary visual: local repository on the left with commit history, bidirectional arrows for git push and git pull, and GitHub origin on the right labeled as backup and collaboration." style="width:100%; max-width:860px;">
