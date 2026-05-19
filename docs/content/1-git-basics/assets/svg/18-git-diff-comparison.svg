@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 220" width="860" height="220" font-family="monospace, sans-serif">
+
+  <!-- Terminal window -->
+  <rect x="30" y="10" width="800" height="200" rx="10" fill="#1e1e1e" stroke="#555" stroke-width="2"/>
+  <rect x="30" y="10" width="800" height="32" rx="10" fill="#3c3c3c"/>
+  <rect x="30" y="26" width="800" height="16" fill="#3c3c3c"/>
+  <circle cx="56" cy="26" r="7" fill="#ff5f56"/>
+  <circle cx="76" cy="26" r="7" fill="#ffbd2e"/>
+  <circle cx="96" cy="26" r="7" fill="#27c93f"/>
+  <text x="430" y="31" text-anchor="middle" fill="#aaaaaa" font-size="12" font-family="sans-serif">bash — my-project — git diff</text>
+
+  <!-- diff output -->
+  <text x="55" y="62" fill="#55dd55" font-size="13">$ git diff</text>
+  <text x="55" y="83" fill="#aaaaaa" font-size="12">diff --git a/README.md b/README.md</text>
+  <text x="55" y="100" fill="#aaaaaa" font-size="12">index a1b2c3..d4e5f6 100644</text>
+  <text x="55" y="117" fill="#aaaaaa" font-size="12">--- a/README.md</text>
+  <text x="55" y="134" fill="#aaaaaa" font-size="12">+++ b/README.md</text>
+  <text x="55" y="151" fill="#aaaaaa" font-size="12">@@ -1,5 +1,6 @@</text>
+  <text x="55" y="168" fill="#aaaaaa" font-size="12"> # My Project</text>
+  <text x="55" y="185" fill="#e76f51" font-size="12">-This is the old description.</text>
+  <text x="55" y="200" fill="#2a9d8f" font-size="12">+This is the new, improved description.</text>
+
+  <!-- Legend -->
+  <rect x="600" y="155" width="210" height="50" rx="8" fill="#2d2d2d" stroke="#555" stroke-width="1"/>
+  <text x="614" y="173" fill="#e76f51" font-size="12">- red = removed line</text>
+  <text x="614" y="191" fill="#2a9d8f" font-size="12">+ green = added line</text>
+
+</svg>

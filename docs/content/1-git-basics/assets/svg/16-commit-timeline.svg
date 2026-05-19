@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 160" width="860" height="160" font-family="monospace, sans-serif">
+
+  <!-- Timeline line -->
+  <line x1="60" y1="80" x2="800" y2="80" stroke="#2a9d8f" stroke-width="3" stroke-linecap="round"/>
+  <!-- Arrowhead at end -->
+  <polygon points="796,74 812,80 796,86" fill="#2a9d8f"/>
+
+  <!-- Commit 1 -->
+  <circle cx="120" cy="80" r="14" fill="#2a9d8f" stroke="#e0e0e0" stroke-width="2"/>
+  <text x="120" y="85" text-anchor="middle" fill="#fff" font-size="11" font-weight="bold">C1</text>
+  <rect x="60" y="105" width="120" height="40" rx="6" fill="#1a2020" stroke="#2a9d8f" stroke-width="1"/>
+  <text x="120" y="122" text-anchor="middle" fill="#a0aec0" font-size="10">abc1234</text>
+  <text x="120" y="136" text-anchor="middle" fill="#718096" font-size="9">Initial commit</text>
+  <line x1="120" y1="94" x2="120" y2="105" stroke="#2a9d8f" stroke-width="1.5" stroke-dasharray="3,2"/>
+
+  <!-- Commit 2 -->
+  <circle cx="300" cy="80" r="14" fill="#2a9d8f" stroke="#e0e0e0" stroke-width="2"/>
+  <text x="300" y="85" text-anchor="middle" fill="#fff" font-size="11" font-weight="bold">C2</text>
+  <rect x="240" y="105" width="120" height="40" rx="6" fill="#1a2020" stroke="#2a9d8f" stroke-width="1"/>
+  <text x="300" y="122" text-anchor="middle" fill="#a0aec0" font-size="10">def5678</text>
+  <text x="300" y="136" text-anchor="middle" fill="#718096" font-size="9">Add homepage</text>
+  <line x1="300" y1="94" x2="300" y2="105" stroke="#2a9d8f" stroke-width="1.5" stroke-dasharray="3,2"/>
+
+  <!-- Commit 3 -->
+  <circle cx="480" cy="80" r="14" fill="#2a9d8f" stroke="#e0e0e0" stroke-width="2"/>
+  <text x="480" y="85" text-anchor="middle" fill="#fff" font-size="11" font-weight="bold">C3</text>
+  <rect x="420" y="105" width="120" height="40" rx="6" fill="#1a2020" stroke="#2a9d8f" stroke-width="1"/>
+  <text x="480" y="122" text-anchor="middle" fill="#a0aec0" font-size="10">ghi9012</text>
+  <text x="480" y="136" text-anchor="middle" fill="#718096" font-size="9">Fix typo in readme</text>
+  <line x1="480" y1="94" x2="480" y2="105" stroke="#2a9d8f" stroke-width="1.5" stroke-dasharray="3,2"/>
+
+  <!-- Commit 4 (HEAD) -->
+  <circle cx="660" cy="80" r="14" fill="#e76f51" stroke="#e0e0e0" stroke-width="2"/>
+  <text x="660" y="85" text-anchor="middle" fill="#fff" font-size="11" font-weight="bold">C4</text>
+  <rect x="590" y="105" width="140" height="40" rx="6" fill="#2d1a0a" stroke="#e76f51" stroke-width="1"/>
+  <text x="660" y="122" text-anchor="middle" fill="#f4a261" font-size="10">jkl3456</text>
+  <text x="660" y="136" text-anchor="middle" fill="#718096" font-size="9">Add styles ← HEAD</text>
+  <line x1="660" y1="94" x2="660" y2="105" stroke="#e76f51" stroke-width="1.5" stroke-dasharray="3,2"/>
+
+  <!-- Labels -->
+  <text x="55" y="55" fill="#718096" font-size="11" font-style="italic" font-family="sans-serif">git commit -m "message"  saves a new snapshot to the timeline</text>
+
+</svg>

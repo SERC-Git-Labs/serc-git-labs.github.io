@@ -273,7 +273,7 @@ git status
 
 ---
 
-### Slide 13: Staging Changes with `git add`
+### Staging Changes with `git add`
 
 ```bash
 git add filename
@@ -284,11 +284,11 @@ git add .
 * `git add .` stages all current changes
 * Staging lets you choose what goes into the next commit
 
-<img src="assets/svg/slide13-staging-files.svg" alt="Two changed files with arrows pointing into a staging area box, a third file with a dashed arrow marked not staged, then arrow from staging area to commit." style="width:100%; max-width:860px;">
+<img src="assets/svg/15-staging-files.svg" alt="Two changed files with arrows pointing into a staging area box, a third file with a dashed arrow marked not staged, then arrow from staging area to commit." style="width:100%; max-width:860px;">
 
 ---
 
-### Slide 14: Saving Changes with `git commit`
+### Saving Changes with `git commit`
 
 ```bash
 git commit -m "Add homepage"
@@ -298,11 +298,15 @@ git commit -m "Add homepage"
 * Commit messages should explain the change
 * Good commits are small and focused
 
-<img src="assets/svg/slide14-commit-timeline.svg" alt="Horizontal timeline with four labeled commit points: Initial commit, Add homepage, Fix typo, and Add styles marked as HEAD." style="width:100%; max-width:860px;">
+<img src="assets/svg/16-commit-timeline.svg" alt="Horizontal timeline with four labeled commit points: Initial commit, Add homepage, Fix typo, and Add styles marked as HEAD." style="width:100%; max-width:860px;">
+
+::: notes
+[TODO notes about commit messages, best practices, and how commits are the building blocks of your project history]
+:::
 
 ---
 
-### Slide 15: Viewing History with `git log`
+### Viewing History with `git log`
 
 ```bash
 git log
@@ -313,11 +317,11 @@ git log --oneline
 * Includes commit ID, author, date, and message
 * Useful for understanding project history
 
-<img src="assets/svg/slide15-git-log-history.svg" alt="Terminal showing git log --oneline output with four commits listed, HEAD pointing to the most recent." style="width:100%; max-width:860px;">
+<img src="assets/svg/17-git-log-history.svg" alt="Terminal showing git log --oneline output with four commits listed, HEAD pointing to the most recent." style="width:100%; max-width:860px;">
 
 ---
 
-### Slide 16: Comparing Changes with `git diff`
+### Comparing Changes with `git diff`
 
 ```bash
 git diff
@@ -327,42 +331,40 @@ git diff
 * Helps review your work
 * Reduces accidental commits
 
-<img src="assets/svg/slide16-git-diff-comparison.svg" alt="Terminal showing git diff output with a removed line in red prefixed with minus and an added line in green prefixed with plus." style="width:100%; max-width:860px;">
+<img src="assets/svg/18-git-diff-comparison.svg" alt="Terminal showing git diff output with a removed line in red prefixed with minus and an added line in green prefixed with plus." style="width:100%; max-width:860px;">
 
 ---
 
-### Slide 17: Intro to Remotes
+### Intro to Remotes
 
 * A remote is a linked copy of your repo hosted elsewhere
 * GitHub repos are commonly used as remotes
 * `origin` is the default remote name
-* Remotes let you push and pull work
-
-**Command:**
+* Remotes let you share your work and collaborate
 
 ```bash
 git remote -v
 ```
 
-<img src="assets/svg/slide17-remote-origin.svg" alt="Local repository on left connected via git push and git pull arrows to GitHub origin on right, labeled with github.com/user/repo." style="width:100%; max-width:860px;">
+<img src="assets/svg/19-remote-origin.svg" alt="Local repository on left connected via git push and git pull arrows to GitHub origin on right, labeled with github.com/user/repo." style="width:100%; max-width:860px;">
 
 ---
 
-### Slide 18: Pushing Changes to GitHub
+### Pushing Changes to Remote
 
 ```bash
 git push
 ```
 
 * Sends local commits to the remote repo
-* Updates GitHub with your latest work
+* Updates the remote with your latest work
 * Requires permission to push
 
-<img src="assets/svg/slide18-git-push.svg" alt="Local repository on left with a bold arrow labeled git push pointing right to a GitHub cloud showing the repo is now up to date." style="width:100%; max-width:860px;">
+<img src="assets/svg/20-git-push.svg" alt="Local repository on left with a bold arrow labeled git push pointing right to a GitHub cloud showing the repo is now up to date." style="width:100%; max-width:860px;">
 
 ---
 
-### Slide 19: Pulling Changes from GitHub
+### Pulling Changes from Remote
 
 ```bash
 git pull
@@ -370,27 +372,27 @@ git pull
 
 * Brings remote changes down to your computer
 * Keeps your local repo up to date
-* Mention only briefly; deeper syncing comes later
 
-<img src="assets/svg/slide19-git-pull.svg" alt="GitHub cloud on the left with a bold arrow labeled git pull pointing right to a local repository showing the new commit has been downloaded." style="width:100%; max-width:860px;">
+<img src="assets/svg/21-git-pull.svg" alt="GitHub cloud on the left with a bold arrow labeled git pull pointing right to a local repository showing the new commit has been downloaded." style="width:100%; max-width:860px;">
 
 ---
 
-### Slide 20: Demo - Local-First Workflow
+### Demo - Local-First Workflow
 
 Demo steps:
 
 1. Create folder
-2. Run `git init`
-3. Add a file
-4. Stage and commit
-5. View history
+2. Run: `git init`
+3. Add a file: `echo "Hello Git" > README.md`
+4. Stage: `git add README.md`
+5. Commit: `git commit -m "Add README"`
+6. View history
 
-<img src="assets/svg/slide20-demo-checklist.svg" alt="Numbered checklist of five demo steps: Create folder, git init, Add a file, Stage and commit, View history with git log." style="width:100%; max-width:860px;">
+<img src="assets/svg/22-demo-checklist.svg" alt="Numbered checklist of five demo steps: Create folder, git init, Add a file, Stage and commit, View history with git log." style="width:100%; max-width:860px;">
 
 ---
 
-### Slide 21: Demo - GitHub-First Workflow
+### Demo - GitHub-First Workflow
 
 Demo steps:
 

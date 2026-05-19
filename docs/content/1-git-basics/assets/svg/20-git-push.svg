@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 190" width="860" height="190" font-family="sans-serif">
+
+  <!-- Laptop (local) -->
+  <rect x="40" y="20" width="280" height="150" rx="10" fill="#1a1a2e" stroke="#2a9d8f" stroke-width="2"/>
+  <text x="180" y="46" text-anchor="middle" fill="#2a9d8f" font-size="14" font-weight="bold">Local Repo</text>
+  <rect x="80" y="58" width="200" height="80" rx="6" fill="#2d3748" stroke="#4a5568" stroke-width="1.5"/>
+  <rect x="87" y="65" width="186" height="64" rx="3" fill="#0d1117"/>
+  <text x="180" y="90" text-anchor="middle" fill="#2a9d8f" font-size="11" font-family="monospace">● jkl3456 Add styles</text>
+  <text x="180" y="107" text-anchor="middle" fill="#718096" font-size="11" font-family="monospace">● abc1234 Initial</text>
+  <rect x="65" y="138" width="230" height="10" rx="4" fill="#4a5568"/>
+  <text x="180" y="165" text-anchor="middle" fill="#718096" font-size="10" font-family="monospace">$ git push</text>
+
+  <!-- Arrow: laptop → GitHub -->
+  <defs>
+    <marker id="push-arr" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#e76f51"/>
+    </marker>
+  </defs>
+  <line x1="328" y1="95" x2="500" y2="95" stroke="#e76f51" stroke-width="4" stroke-linecap="round" marker-end="url(#push-arr)"/>
+  <text x="414" y="80" text-anchor="middle" fill="#e76f51" font-size="13" font-weight="bold">git push</text>
+  <text x="414" y="116" text-anchor="middle" fill="#718096" font-size="10">sends local commits</text>
+  <text x="414" y="130" text-anchor="middle" fill="#718096" font-size="10">to GitHub</text>
+
+  <!-- GitHub Cloud (right) -->
+  <rect x="508" y="20" width="312" height="150" rx="10" fill="#0d1117" stroke="#7ec8e3" stroke-width="2"/>
+  <text x="664" y="46" text-anchor="middle" fill="#7ec8e3" font-size="14" font-weight="bold">GitHub (origin)</text>
+  <!-- Cloud -->
+  <ellipse cx="624" cy="110" rx="34" ry="22" fill="#21262d" stroke="#7ec8e3" stroke-width="1.5"/>
+  <ellipse cx="658" cy="100" rx="30" ry="21" fill="#21262d" stroke="#7ec8e3" stroke-width="1.5"/>
+  <ellipse cx="696" cy="108" rx="34" ry="22" fill="#21262d" stroke="#7ec8e3" stroke-width="1.5"/>
+  <rect x="594" y="114" width="136" height="24" fill="#21262d"/>
+  <line x1="594" y1="138" x2="730" y2="138" stroke="#7ec8e3" stroke-width="1.5"/>
+  <text x="664" y="128" text-anchor="middle" fill="#7ec8e3" font-size="10" font-family="monospace">now up to date ✓</text>
+  <text x="664" y="162" text-anchor="middle" fill="#718096" font-size="10" font-family="monospace">github.com/user/repo</text>
+
+</svg>

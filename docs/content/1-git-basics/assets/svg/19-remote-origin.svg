@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 190" width="860" height="190" font-family="sans-serif">
+
+  <defs>
+    <marker id="arr5" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#2a9d8f"/>
+    </marker>
+    <marker id="arr6" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#7ec8e3"/>
+    </marker>
+  </defs>
+
+  <!-- Local Repo box -->
+  <rect x="30" y="30" width="270" height="130" rx="10" fill="#1a1a2e" stroke="#2a9d8f" stroke-width="2"/>
+  <text x="165" y="56" text-anchor="middle" fill="#2a9d8f" font-size="13" font-weight="bold">Local Repository</text>
+  <text x="80" y="82" fill="#a0aec0" font-size="11" font-family="monospace">● jkl3456 Add styles</text>
+  <text x="80" y="99" fill="#a0aec0" font-size="11" font-family="monospace">● ghi9012 Fix typo</text>
+  <text x="80" y="116" fill="#a0aec0" font-size="11" font-family="monospace">● abc1234 Initial</text>
+  <rect x="52" y="130" width="200" height="22" rx="6" fill="#2d3748" stroke="#4a5568" stroke-width="1"/>
+  <text x="152" y="145" text-anchor="middle" fill="#718096" font-size="10" font-family="monospace">remote: origin → GitHub</text>
+
+  <!-- Bidirectional arrows with labels -->
+  <line x1="306" y1="85" x2="520" y2="85" stroke="#e76f51" stroke-width="2.5" marker-end="url(#arr5)"/>
+  <text x="413" y="74" text-anchor="middle" fill="#e76f51" font-size="11" font-weight="bold">git push</text>
+
+  <line x1="520" y1="115" x2="306" y2="115" stroke="#7ec8e3" stroke-width="2.5" marker-end="url(#arr6)"/>
+  <text x="413" y="132" text-anchor="middle" fill="#7ec8e3" font-size="11" font-weight="bold">git pull</text>
+
+  <!-- origin label -->
+  <text x="413" y="100" text-anchor="middle" fill="#718096" font-size="10" font-style="italic">origin</text>
+
+  <!-- GitHub Cloud box -->
+  <rect x="524" y="30" width="306" height="130" rx="10" fill="#0d1117" stroke="#7ec8e3" stroke-width="2"/>
+  <text x="677" y="56" text-anchor="middle" fill="#7ec8e3" font-size="13" font-weight="bold">GitHub (origin)</text>
+  <text x="677" y="76" text-anchor="middle" fill="#718096" font-size="11" font-family="monospace">github.com/user/repo</text>
+  <!-- Cloud shape mini -->
+  <ellipse cx="643" cy="115" rx="28" ry="18" fill="#21262d" stroke="#7ec8e3" stroke-width="1.5"/>
+  <ellipse cx="672" cy="107" rx="24" ry="17" fill="#21262d" stroke="#7ec8e3" stroke-width="1.5"/>
+  <ellipse cx="703" cy="113" rx="27" ry="18" fill="#21262d" stroke="#7ec8e3" stroke-width="1.5"/>
+  <rect x="618" y="117" width="113" height="18" fill="#21262d"/>
+  <line x1="618" y1="135" x2="730" y2="135" stroke="#7ec8e3" stroke-width="1.5"/>
+  <text x="677" y="128" text-anchor="middle" fill="#7ec8e3" font-size="9" font-family="monospace">backup + collaboration</text>
+
+</svg>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 200" width="860" height="200" font-family="sans-serif">
+
+  <rect x="200" y="10" width="460" height="180" rx="12" fill="#1a1a2e" stroke="#2a9d8f" stroke-width="2"/>
+  <text x="430" y="38" text-anchor="middle" fill="#2a9d8f" font-size="14" font-weight="bold">Demo: Local-First Workflow</text>
+
+  <!-- Steps as checklist -->
+  <rect x="228" y="52" width="22" height="22" rx="4" fill="#2a9d8f" stroke="#2a9d8f"/>
+  <text x="239" y="68" text-anchor="middle" fill="#fff" font-size="13" font-weight="bold">1</text>
+  <text x="264" y="68" fill="#e0e0e0" font-size="13">Create a new folder</text>
+
+  <rect x="228" y="82" width="22" height="22" rx="4" fill="#2a9d8f" stroke="#2a9d8f"/>
+  <text x="239" y="98" text-anchor="middle" fill="#fff" font-size="13" font-weight="bold">2</text>
+  <text x="264" y="98" fill="#e0e0e0" font-size="13">Run <tspan font-family="monospace" fill="#7ec8e3">git init</tspan></text>
+
+  <rect x="228" y="112" width="22" height="22" rx="4" fill="#2a9d8f" stroke="#2a9d8f"/>
+  <text x="239" y="128" text-anchor="middle" fill="#fff" font-size="13" font-weight="bold">3</text>
+  <text x="264" y="128" fill="#e0e0e0" font-size="13">Add a file</text>
+
+  <rect x="228" y="142" width="22" height="22" rx="4" fill="#2a9d8f" stroke="#2a9d8f"/>
+  <text x="239" y="158" text-anchor="middle" fill="#fff" font-size="13" font-weight="bold">4</text>
+  <text x="264" y="158" fill="#e0e0e0" font-size="13">Stage and commit</text>
+
+  <rect x="228" y="162" width="22" height="22" rx="4" fill="#e76f51" stroke="#e76f51"/>
+  <text x="239" y="178" text-anchor="middle" fill="#fff" font-size="13" font-weight="bold">5</text>
+  <text x="264" y="178" fill="#e0e0e0" font-size="13">View history with <tspan font-family="monospace" fill="#7ec8e3">git log</tspan></text>
+
+</svg>

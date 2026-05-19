@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 200" width="860" height="200" font-family="sans-serif">
+
+  <defs>
+    <marker id="arr2" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#2a9d8f"/>
+    </marker>
+    <marker id="arr3" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#4a5568"/>
+    </marker>
+  </defs>
+
+  <!-- Files on left -->
+  <text x="40" y="40" fill="#e0e0e0" font-size="13" font-weight="bold" font-family="sans-serif">Changed Files</text>
+  <rect x="30" y="52" width="170" height="34" rx="6" fill="#2d2020" stroke="#e76f51" stroke-width="1.5"/>
+  <text x="115" y="74" text-anchor="middle" fill="#e76f51" font-size="12" font-family="monospace">📄 README.md</text>
+  <rect x="30" y="94" width="170" height="34" rx="6" fill="#2d2020" stroke="#e76f51" stroke-width="1.5"/>
+  <text x="115" y="116" text-anchor="middle" fill="#e76f51" font-size="12" font-family="monospace">📄 index.html</text>
+  <rect x="30" y="136" width="170" height="34" rx="6" fill="#2d2020" stroke="#718096" stroke-width="1.5"/>
+  <text x="115" y="158" text-anchor="middle" fill="#718096" font-size="12" font-family="monospace">📄 notes.txt</text>
+
+  <!-- git add arrows -->
+  <line x1="204" y1="69" x2="348" y2="105" stroke="#2a9d8f" stroke-width="2" marker-end="url(#arr2)"/>
+  <line x1="204" y1="111" x2="348" y2="111" stroke="#2a9d8f" stroke-width="2" marker-end="url(#arr2)"/>
+  <!-- notes.txt not staged -->
+  <line x1="204" y1="153" x2="348" y2="153" stroke="#4a5568" stroke-width="1.5" stroke-dasharray="6,4" marker-end="url(#arr3)"/>
+
+  <rect x="240" y="65" width="60" height="38" rx="6" fill="#00000057"/>
+  <text x="270" y="75" text-anchor="middle" fill="#2a9d8f" font-size="10" font-weight="bold" font-family="monospace">git add</text>
+  <text x="270" y="87" text-anchor="middle" fill="#2a9d8f" font-size="10" font-family="monospace">README.md</text>
+  <text x="270" y="98" text-anchor="middle" fill="#2a9d8f" font-size="10" font-family="monospace">index.html</text>
+  <text x="270" y="162" text-anchor="middle" fill="#4a5568" font-size="10" font-style="italic">not staged</text>
+
+  <!-- Staging box -->
+  <rect x="352" y="60" width="220" height="100" rx="10" fill="#1a2020" stroke="#2a9d8f" stroke-width="2.5"/>
+  <text x="462" y="85" text-anchor="middle" fill="#2a9d8f" font-size="13" font-weight="bold">Staging Area</text>
+  <text x="462" y="108" text-anchor="middle" fill="#a0aec0" font-size="11" font-family="monospace">✅ README.md</text>
+  <text x="462" y="126" text-anchor="middle" fill="#a0aec0" font-size="11" font-family="monospace">✅ index.html</text>
+  <text x="462" y="143" text-anchor="middle" fill="#4a5568" font-size="10">notes.txt not included</text>
+
+  <!-- Arrow to commit -->
+  <defs>
+    <marker id="arr4" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#e76f51"/>
+    </marker>
+  </defs>
+  <line x1="576" y1="110" x2="640" y2="110" stroke="#e76f51" stroke-width="2.5" marker-end="url(#arr4)"/>
+  <text x="608" y="100" text-anchor="middle" fill="#e76f51" font-size="10" font-weight="bold" font-family="monospace">git commit</text>
+
+  <!-- Commit box -->
+  <rect x="644" y="75" width="190" height="70" rx="10" fill="#1a1a2e" stroke="#7ec8e3" stroke-width="2"/>
+  <text x="739" y="100" text-anchor="middle" fill="#7ec8e3" font-size="13" font-weight="bold">Commit</text>
+  <text x="739" y="118" text-anchor="middle" fill="#a0aec0" font-size="10" font-family="monospace">abc1234</text>
+  <text x="739" y="133" text-anchor="middle" fill="#718096" font-size="10">snapshot saved</text>
+
+</svg>
